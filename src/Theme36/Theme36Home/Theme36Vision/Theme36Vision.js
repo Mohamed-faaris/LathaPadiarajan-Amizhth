@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Lightbulb, Compass, Target, Handshake } from "lucide-react";
-import './style.js';
+import styles from './style.js';
 
 const Theme36Vision = () => {
   const sectionRef = useRef(null);
@@ -65,76 +65,37 @@ const Theme36Vision = () => {
     <section
       id="philosophy"
       ref={sectionRef}
-      style={{
-        paddingTop: "6rem",
-        paddingBottom: "6rem",
-        backgroundColor: "hsl(var(--background))",
-      }}
+      style={styles.section}
     >
       <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          paddingLeft: "1.5rem",
-          paddingRight: "1.5rem",
-        }}
+        style={styles.sectionContainer}
       >
         <div
-          style={{
-            maxWidth: "64rem",
-            margin: "0 auto",
-          }}
+          style={styles.sectionInner}
         >
           {/* Section Header */}
           <div
             className="observe-scroll"
-            style={{
-              textAlign: "center",
-              marginBottom: "4rem",
-            }}
+            style={styles.header}
           >
             <div
-              style={{
-                display: "inline-block",
-                marginBottom: "1rem",
-                paddingLeft: "1.5rem",
-                paddingRight: "1.5rem",
-                paddingTop: "0.5rem",
-                paddingBottom: "0.5rem",
-                fontSize: "0.875rem",
-                fontWeight: "500",
-                backgroundColor: "hsl(var(--primary))",
-                color: "hsl(var(--primary-foreground))",
-                borderRadius: "0.375rem",
-              }}
+              style={styles.badge}
             >
               Guiding Philosophy
             </div>
             <h2
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: isMobile ? "2.5rem" : "3rem",
-                fontWeight: "bold",
-                color: "hsl(var(--foreground))",
-                marginBottom: "1.5rem",
-              }}
+              style={isMobile ? styles.titleMobile : styles.title}
             >
               Principles That
               <span
                 className="text-gradient-primary"
-                style={{ display: "block" }}
+                style={styles.gradientText}
               >
                 Drive Change
               </span>
             </h2>
             <p
-              style={{
-                fontSize: "1.25rem",
-                color: "hsl(var(--muted-foreground))",
-                lineHeight: "1.625",
-                maxWidth: "48rem",
-                margin: "0 auto",
-              }}
+              style={styles.subtitle}
             >
               A leadership philosophy built on the foundation of purpose-driven
               innovation and human-centric business practices.
@@ -143,62 +104,30 @@ const Theme36Vision = () => {
 
           {/* Principles Grid */}
           <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
-              gap: "2rem",
-            }}
+            style={isMobile ? styles.gridMobile : styles.grid}
           >
             {principles.map((principle, index) => (
               <div
                 key={index}
                 className="observe-scroll hover-lift"
-                style={{
-                  padding: "2rem",
-                  backgroundColor: "hsl(var(--card))",
-                  borderRadius: "0.5rem",
-                  boxShadow:
-                    "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
-                  transition: "all 0.3s",
-                  animationDelay: `${index * 0.1}s`,
-                }}
+                style={{ ...styles.card, animationDelay: `${index * 0.1}s` }}
               >
                 <principle.icon
                   size={40}
-                  style={{
-                    color: "hsl(var(--primary))",
-                    marginBottom: "1.5rem",
-                  }}
+                  style={styles.icon}
                 />
                 <h3
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "1.5rem",
-                    fontWeight: "600",
-                    color: "hsl(var(--foreground))",
-                    marginBottom: "1rem",
-                  }}
+                  style={styles.cardTitle}
                 >
                   {principle.title}
                 </h3>
                 <p
-                  style={{
-                    fontSize: "1.125rem",
-                    color: "hsl(var(--muted-foreground))",
-                    lineHeight: "1.625",
-                    marginBottom: "1.5rem",
-                  }}
+                  style={styles.cardText}
                 >
                   {principle.description}
                 </p>
                 <blockquote
-                  style={{
-                    fontSize: "1rem",
-                    fontStyle: "italic",
-                    color: "hsl(var(--primary))",
-                    borderLeft: "3px solid hsl(var(--primary))",
-                    paddingLeft: "1rem",
-                  }}
+                  style={styles.quote}
                 >
                   "{principle.quote}"
                 </blockquote>
@@ -209,39 +138,18 @@ const Theme36Vision = () => {
           {/* Vision Statement */}
           <div
             className="observe-scroll"
-            style={{
-              marginTop: "5rem",
-              textAlign: "center",
-            }}
+            style={styles.visionStatement}
           >
             <div
-              style={{
-                padding: "3rem",
-                background:
-                  "linear-gradient(135deg, hsla(var(--primary), 0.1) 0%, hsla(var(--accent), 0.1) 100%)",
-                border: "1px solid hsla(var(--primary), 0.2)",
-                borderRadius: "0.5rem",
-              }}
+              style={styles.visionCard}
             >
               <h3
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "2rem",
-                  fontWeight: "600",
-                  color: "hsl(var(--foreground))",
-                  marginBottom: "1.5rem",
-                }}
+                style={styles.visionTitle}
               >
                 Vision for Tomorrow
               </h3>
               <p
-                style={{
-                  fontSize: "1.25rem",
-                  color: "hsl(var(--muted-foreground))",
-                  lineHeight: "1.625",
-                  maxWidth: "48rem",
-                  margin: "0 auto",
-                }}
+                style={styles.visionText}
               >
                 To create organizations that not only thrive in the marketplace
                 but also contribute meaningfully to societal progress, fostering
