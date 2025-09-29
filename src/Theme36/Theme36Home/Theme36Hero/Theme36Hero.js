@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowDown, Sparkles } from "lucide-react";
-import heroBackground from "@/assets/hero-bg.jpg";
-import lathaPortrait from "@/assets/latha-portrait.jpg";
+import heroBackground from "../../../assets/hero-bg.jpg";
+import lathaPortrait from "../../../assets/latha-portrait.jpg";
 
 const Theme36Hero = () => {
   const parallaxRef = useRef(null);

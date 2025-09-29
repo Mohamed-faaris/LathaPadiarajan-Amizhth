@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Building, TrendingUp, Heart, Users, Globe, Award } from "lucide-react";
-import achievementsBg from "@/assets/achievements-bg.jpg";
+import achievementsBg from "../../../assets/achievements-bg.jpg";
 
 const Theme36Testimonials = () => {
   const sectionRef = useRef(null);
