@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import './style.js';
 
 export default function Theme36NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);

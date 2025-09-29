@@ -5,6 +5,7 @@ import Theme36Vision from './Theme36Vision';
 import Theme36Testimonials from './Theme36Testimonials';
 import Theme36Contact from './Theme36Contact';
 import Theme36Footer from '../Theme36Footer';
+import './style.js';
 
 const Theme36Home = () => {
   return (

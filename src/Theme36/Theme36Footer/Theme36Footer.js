@@ -1,5 +1,6 @@
 import { Heart, Linkedin, Mail, MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
+import './style.js';
 
 const Theme36Footer = () => {
   const currentYear = new Date().getFullYear();

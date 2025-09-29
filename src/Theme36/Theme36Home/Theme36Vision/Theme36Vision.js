@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Lightbulb, Compass, Target, Handshake } from "lucide-react";
+import './style.js';
 
 const Theme36Vision = () => {
   const sectionRef = useRef(null);

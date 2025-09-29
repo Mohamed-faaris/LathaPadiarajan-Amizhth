@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
+import './style.js';
 
 const Theme36Contact = () => {
   const [formData, setFormData] = useState({

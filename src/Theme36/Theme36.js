@@ -1,6 +1,7 @@
 import Theme36NavBar from './Theme36NavBar';
 import Theme36Home from './Theme36Home';
 import Theme36Footer from './Theme36Footer';
+import './style.js';
 
 const Theme36 = () => {
   return (

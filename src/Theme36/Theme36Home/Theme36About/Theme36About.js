@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Heart, Users, TrendingUp, Award } from "lucide-react";
+import './style.js';
 
 const Theme36About = () => {
   const sectionRef = useRef(null);
