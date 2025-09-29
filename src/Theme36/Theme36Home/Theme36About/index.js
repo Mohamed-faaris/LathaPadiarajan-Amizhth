@@ -1,1 +1,1 @@
-export { default } from "./Theme36About.tsx";
+export { default } from "./Theme36About.js";

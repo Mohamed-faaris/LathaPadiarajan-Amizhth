@@ -1,1 +1,1 @@
-export { default } from "./Theme36Footer.tsx";
+export { default } from "./Theme36Footer.js";

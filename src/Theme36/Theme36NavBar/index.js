@@ -1,1 +1,1 @@
-export { default } from "./Theme36NavBar.tsx";
+export { default } from "./Theme36NavBar.js";
