@@ -1,0 +1,15 @@
+import Theme36NavBar from './Theme36NavBar';
+import Theme36Home from './Theme36Home';
+import Theme36Footer from './Theme36Footer';
+
+const Theme36 = () => {
+  return (
+    <div>
+      <Theme36NavBar />
+      <Theme36Home />
+      <Theme36Footer />
+    </div>
+  );
+};
+
+export default Theme36;
