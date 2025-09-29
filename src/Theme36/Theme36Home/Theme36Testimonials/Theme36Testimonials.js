@@ -57,44 +57,50 @@ const Theme36Testimonials = () => {
     {
       icon: Building,
       title: "Industry Pioneer",
-      description: "Co-founded Ma Foi in 1992, pioneering India's HR services industry and establishing it as a cornerstone of modern business practices.",
+      description:
+        "Co-founded Ma Foi in 1992, pioneering India's HR services industry and establishing it as a cornerstone of modern business practices.",
       metric: "30+ Years",
-      metricLabel: "of Leadership"
+      metricLabel: "of Leadership",
     },
     {
       icon: TrendingUp,
       title: "Strategic Exit Success",
-      description: "Successfully sold Ma Foi to Dutch multinational Vedior NV in 2004, validating the company's market value and industry credibility.",
+      description:
+        "Successfully sold Ma Foi to Dutch multinational Vedior NV in 2004, validating the company's market value and industry credibility.",
       metric: "2004",
-      metricLabel: "Exit Year"
+      metricLabel: "Exit Year",
     },
     {
       icon: Heart,
       title: "Philanthropic Impact",
-      description: "Dedicated to social causes including education, healthcare, and women's empowerment through various charitable initiatives.",
+      description:
+        "Dedicated to social causes including education, healthcare, and women's empowerment through various charitable initiatives.",
       metric: "1000+",
-      metricLabel: "Lives Impacted"
+      metricLabel: "Lives Impacted",
     },
     {
       icon: Users,
       title: "Team Leadership",
-      description: "Built and led high-performing teams that transformed industries and created lasting positive change in the business landscape.",
+      description:
+        "Built and led high-performing teams that transformed industries and created lasting positive change in the business landscape.",
       metric: "5000+",
-      metricLabel: "Professionals Mentored"
+      metricLabel: "Professionals Mentored",
     },
     {
       icon: Globe,
       title: "Global Recognition",
-      description: "Earned international recognition for innovative HR practices and contributions to business excellence in the Asia-Pacific region.",
+      description:
+        "Earned international recognition for innovative HR practices and contributions to business excellence in the Asia-Pacific region.",
       metric: "Global",
-      metricLabel: "Impact"
+      metricLabel: "Impact",
     },
     {
       icon: Award,
       title: "Excellence Awards",
-      description: "Received numerous industry awards and recognitions for outstanding contributions to HR innovation and business leadership.",
+      description:
+        "Received numerous industry awards and recognitions for outstanding contributions to HR innovation and business leadership.",
       metric: "25+",
-      metricLabel: "Awards Won"
+      metricLabel: "Awards Won",
     },
   ];
 
