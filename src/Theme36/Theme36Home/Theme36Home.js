@@ -16,7 +16,6 @@ const Theme36Home = () => {
       <Theme36Vision />
       <Theme36Testimonials />
       <Theme36Contact />
-      <Theme36Footer />
     </main>
   );
 };
